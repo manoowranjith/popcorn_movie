@@ -1,0 +1,23 @@
+header{
+    color:white;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
+    margin: 2vh 10vw 20vh 10vw;
+    height: 20px;
+}
+i{
+    margin-right: 2px;
+}
+button{
+    background-color: white;
+    height: 50px;
+    cursor: pointer;
+}
+iframe{
+    display: block;
+    margin:  0 auto;;
+    width: 70vw;
+    height: 70vh;
+}

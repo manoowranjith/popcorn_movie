@@ -1,0 +1,51 @@
+header{
+    color:white;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
+    margin: 2vh 10vw;
+    height: 20px;
+}
+select{
+    background-color: white;
+    height: 50px;
+}
+button{
+    background-color: white;
+    height: 50px;
+    cursor: pointer;
+}
+.movieList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10vh 10vw;
+    grid-gap:20px;
+    /* color: white; */
+}
+.movieDetail{
+    padding:10px 30px;
+    border:1px solid rgb(255, 255, 255);
+    background-color: white;
+    cursor:pointer
+}
+h1{
+    color: white;
+}
+h2{
+    height: 50px;
+}
+img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    padding:20px 0px;
+}
+.popularity{
+    display: flex;
+    justify-content: space-between;
+    /* padding:10px 20px; */
+}
+i{
+    margin-right: 5px;
+}

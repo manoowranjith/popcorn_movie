@@ -1,0 +1,23 @@
+<header id="headerContainer">
+   <h1><i class="fas fa-tv"></i>MY TV</h1>
+   <select name="languages" id="langOption"(change)="changingMovie(selectField.value);" #selectField>
+    <!-- <select name="languages" id="langOption"(change)="changingMovie(selectField.value);" #selectField> -->
+    <option >Popular</option>
+    <option >Top</option>
+    <option >Upcoming</option>
+  </select>
+  <button routerLink="/home">HOME</button>
+</header>
+<router-outlet></router-outlet>
+<div class="movieList">
+    <div (click)="getmoviesScene(movie.id)" id="movieContainer" class="movieDetail" *ngFor="let movie of movieList">
+    <!-- <div id="movieContainer" class="movieDetail" *ngFor="let movie of movieList"> -->
+        <h2>{{movie.name}}</h2>
+        <pre>Released  {{movie.release}}</pre>
+        <img src={{movie.poster}} alt="" srcset="">
+        <div class="popularity">
+            <p><i class="fas fa-eye"></i>{{movie.views}}</p>
+            <p><i class="fas fa-heart"></i>{{movie.likes}}</p>
+        </div>
+    </div>
+</div>
